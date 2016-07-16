@@ -1,0 +1,24 @@
+{
+  "name": "hyperblue",
+  "version": "0.0.1",
+  "description": "Turns <a href=\"https://hyperterm.org\">hyperterm</a> blue",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylerreckart/hyperblue.git"
+  },
+  "keywords": [
+    "hyperterm",
+    "theme",
+    "blue"
+  ],
+  "author": "Tyler Reckart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tylerreckart/hyperblue/issues"
+  },
+  "homepage": "https://github.com/tylerreckart/hyperblue#readme"
+}
