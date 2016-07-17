@@ -2,7 +2,7 @@
 
 > A fancy [HyperTerm](https://hyperterm.org) theme
 
-![](hyperblue.png)
+![](screenshot.png)
 
 
 ## Install
