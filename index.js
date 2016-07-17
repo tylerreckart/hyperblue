@@ -30,15 +30,7 @@ exports.middleware = (store) => (next) => (action) => {
       action.config.backgroundColor = backgroundColor
       action.config.cursorColor = cursorColor
       action.config.colors = colors
+      action.config.css = '.tabs .tabs_list .tabs_text {color: #13C7FE}'
   }
   next(action)
-}
-
-exports.decorateConfig = (config) => {
-  return Object.assign({}, config, {
-    ${config.css || ''}
-    .tabs .tabs_list .tabs_text {
-       color: #13C7FE;
-    }}
-  });
 }
