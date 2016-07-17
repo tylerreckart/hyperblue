@@ -1,6 +1,6 @@
 {
   "name": "hyperblue",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Turns <a href=\"https://hyperterm.org\">hyperterm</a> blue",
   "main": "index.js",
   "scripts": {
