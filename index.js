@@ -1,36 +1,51 @@
-const backgroundColor = '#16161B'
-const foregroundColor = '#FFFFFF'
-const cursorColor = '#13C7FE'
+'use strict';
+const foregroundColor = '#ffffff';
+const backgroundColor = '#16161B';
+const black = backgroundColor;
+const red = '#d1267f';
+const green = '#00DA90';
+const yellow = '#F8FB3C';
+const blue = '#009CE6';
+const magenta = '#EC26CD';
+const cyan = '#13C7FE';
+const gray = '#f1f1f0';
+const brightBlack = '#686868';
+const brightWhite = foregroundColor;
 
-const colors = [
-  backgroundColor,
-  '#FF0040', // red
-  '#00DA90', // green
-  '#F8FB3C', // yellow
-  '#009CE6', // blue
-  '#EC26CD', // pink
-  '#13C7FE', // cyan
-  '#D0D0D0', // light gray
-  '#808080', // medium gray
-  '#FF0040', // red
-  '#00DA90', // green
-  '#F8FB3C', // yellow
-  '#009CE6', // blue
-  '#EC26CD', // pink
-  '#13C7FE', // cyan
-  '#FFFFFF', // white
-  foregroundColor
-]
+exports.decorateConfig = config => {
+	return Object.assign({}, config, {
+		backgroundColor,
+		foregroundColor,
+		borderColor: '#222430',
+		cursorColor: '#97979b',
+		colors: [
+			black,
+			red,
+			green,
+			yellow,
+			blue,
+			magenta,
+			cyan,
+			gray,
 
-exports.middleware = (store) => (next) => (action) => {
-  switch (action.type) {
-    case 'CONFIG_LOAD':
-    case 'CONFIG_RELOAD':
-      action.config.foregroundColor = foregroundColor
-      action.config.backgroundColor = backgroundColor
-      action.config.cursorColor = cursorColor
-      action.config.colors = colors
-      action.config.css = '.tabs .tabs_list .tabs_text {color: #13C7FE}'
-  }
-  next(action)
-}
+			// bright
+			brightBlack,
+			red,
+			green,
+			yellow,
+			blue,
+			magenta,
+			cyan,
+			brightWhite
+		],
+		css: `
+			${config.css || ''}
+      .tabs. .tabs_list .tabs_text {
+        color: #13C7FE;
+      }
+			.tab_active:before {
+				border-color: #13C7FE;
+			}
+		`
+	});
+};
