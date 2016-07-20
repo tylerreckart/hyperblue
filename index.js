@@ -19,6 +19,7 @@ exports.decorateConfig = config => {
 		borderColor: '#222430',
 		cursorColor: '#97979b',
 		colors: [
+      // regular
 			black,
 			red,
 			green,
