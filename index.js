@@ -16,8 +16,8 @@ exports.decorateConfig = config => {
 	return Object.assign({}, config, {
 		backgroundColor,
 		foregroundColor,
-		borderColor: '#222430',
-		cursorColor: '#97979b',
+		borderColor: '#16161B',
+		cursorColor: '#009CE6',
 		colors: [
       // regular
 			black,
@@ -37,7 +37,7 @@ exports.decorateConfig = config => {
 			blue,
 			magenta,
 			cyan,
-			brightWhite
+		 	brightWhite
 		],
 		css: `
 			${config.css || ''}
@@ -46,7 +46,7 @@ exports.decorateConfig = config => {
       }
 			.tab_active:before {
 				border-color: #13C7FE;
-			}
-		`
+		 	}
+
 	});
 };
