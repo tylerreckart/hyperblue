@@ -39,7 +39,7 @@ exports.decorateConfig = config => {
 			cyan,
 		 	brightWhite
 		],
-		css:
+		css: `
 			${config.css || ''}
       .tabs. .tabs_list .tabs_text {
         color: #13C7FE;
@@ -47,7 +47,7 @@ exports.decorateConfig = config => {
 			.tab_active:before {
 				border-color: #13C7FE;
         border-width: 2px;
-		 	}
+		 	}`
 
 	});
 };
