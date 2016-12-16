@@ -12,7 +12,7 @@ const gray = '#f1f1f0';
 const brightBlack = '#686868';
 const brightWhite = foregroundColor;
 
-exports.onWindow = browserWindow => browserWindow.setVibrancy('dark');
+exports.onWindow = browserWindow => browserWindow.setVibrancy('ultra-dark');
 exports.decorateConfig = config => {
 	return Object.assign({}, config, {
 		backgroundColor,
