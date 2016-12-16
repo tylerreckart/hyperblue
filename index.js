@@ -12,6 +12,7 @@ const gray = '#f1f1f0';
 const brightBlack = '#686868';
 const brightWhite = foregroundColor;
 
+exports.onWindow = browserWindow => browserWindow.setVibrancy('dark');
 exports.decorateConfig = config => {
 	return Object.assign({}, config, {
 		backgroundColor,
@@ -44,10 +45,9 @@ exports.decorateConfig = config => {
       .tabs. .tabs_list .tabs_text {
         color: #13C7FE;
       }
-			.tab_active:before {
+			.tab_tab:before {
 				border-color: #13C7FE;
         border-width: 2px;
-		 	}`
-
+			}`
 	});
 };
