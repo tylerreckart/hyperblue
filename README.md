@@ -1,13 +1,13 @@
 # hyperblue
 
-> A fancy [HyperTerm](https://hyperterm.org) theme
+> A fancy [Hyper](https://hyper.is) theme
 
 ![](screenshot.png)
 
 
 ## Install
 
-Add `hyperblue` to the plugins list in your `~/.hyperterm.js` config file.
+Add `hyperblue` to the plugins list in your `~/.hyper.js` config file.
 
 
 ## License
